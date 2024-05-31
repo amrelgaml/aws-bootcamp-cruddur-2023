@@ -6,4 +6,4 @@ aws budgets create-budget \
     aws sns subscribe \
     --topic-arn=arn:aws:sns:us-east-1:975049946625:billing-alarm \
     --protocol=email \
-    --notification-endpoint=amr.elgaml@gmail.com
+    --notification-endpoint=amr.elgaml@gmail.com; yoman@gmail.com
