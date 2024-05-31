@@ -1,0 +1,9 @@
+aws budgets create-budget \
+    --account-id  975049946625 \
+    --budget file://aws/Budget.json \
+    --notifications-with-subscribers file://aws/json/budget-notification-with-subscribers.json
+
+    aws sns subscribe \
+    --topic-arn=arn:aws:sns:us-east-1:975049946625:billing-alarm \
+    --protocol=email \
+    --notification-endpoint=amr.elgaml@gmail.com
